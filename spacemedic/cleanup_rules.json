@@ -1,0 +1,50 @@
+[
+  {
+    "env": "LOCALAPPDATA",
+    "path": "Google/Chrome/User Data/*/GPUCache",
+    "label": "Chrome GPU cache",
+    "risk": "safe",
+    "reason": "Graphics cache; close Chrome before cleanup",
+    "direct_cleanup": true
+  },
+  {
+    "env": "LOCALAPPDATA",
+    "path": "Microsoft/Edge/User Data/*/GPUCache",
+    "label": "Edge GPU cache",
+    "risk": "safe",
+    "reason": "Graphics cache; close Edge before cleanup",
+    "direct_cleanup": true
+  },
+  {
+    "env": "APPDATA",
+    "path": "Slack/Cache",
+    "label": "Slack cache",
+    "risk": "safe",
+    "reason": "Temporary application cache; close Slack first",
+    "direct_cleanup": true
+  },
+  {
+    "env": "APPDATA",
+    "path": "Slack/Code Cache",
+    "label": "Slack code cache",
+    "risk": "safe",
+    "reason": "Compiled application cache; close Slack first",
+    "direct_cleanup": true
+  },
+  {
+    "env": "LOCALAPPDATA",
+    "path": "JetBrains/*/caches",
+    "label": "JetBrains IDE cache",
+    "risk": "safe",
+    "reason": "IDE cache; close JetBrains applications first",
+    "direct_cleanup": true
+  },
+  {
+    "env": "LOCALAPPDATA",
+    "path": "Steam/htmlcache",
+    "label": "Steam web cache",
+    "risk": "safe",
+    "reason": "Steam client web cache; close Steam first",
+    "direct_cleanup": true
+  }
+]

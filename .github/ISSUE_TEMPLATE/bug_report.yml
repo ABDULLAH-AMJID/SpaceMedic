@@ -1,0 +1,39 @@
+name: Bug report
+description: Report reproducible incorrect or unsafe behavior
+title: "[Bug]: "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: "Do not attach private files or unreviewed diagnostics."
+  - type: input
+    id: version
+    attributes: {label: SpaceMedic version}
+    validations: {required: true}
+  - type: input
+    id: windows
+    attributes: {label: Windows version and architecture}
+    validations: {required: true}
+  - type: dropdown
+    id: admin
+    attributes: {label: Mode, options: [Standard user, Administrator]}
+    validations: {required: true}
+  - type: textarea
+    id: steps
+    attributes: {label: Reproduction steps}
+    validations: {required: true}
+  - type: textarea
+    id: expected
+    attributes: {label: Expected behavior}
+    validations: {required: true}
+  - type: textarea
+    id: actual
+    attributes: {label: Actual behavior and exact error}
+    validations: {required: true}
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Privacy confirmation
+      options:
+        - label: I reviewed and redacted all attachments.
+          required: true

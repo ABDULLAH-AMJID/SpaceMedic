@@ -1,0 +1,20 @@
+name: Feature request
+description: Suggest a broadly useful, safe enhancement
+title: "[Feature]: "
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes: {label: User problem, description: Explain who benefits and why current tools are insufficient.}
+    validations: {required: true}
+  - type: textarea
+    id: proposal
+    attributes: {label: Proposed workflow}
+    validations: {required: true}
+  - type: textarea
+    id: safety
+    attributes: {label: Safety, privacy, rollback, and failure considerations}
+    validations: {required: true}
+  - type: textarea
+    id: references
+    attributes: {label: Authoritative platform or vendor references}

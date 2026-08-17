@@ -1,0 +1,36 @@
+from __future__ import annotations
+
+LANGUAGES = {
+    "en": "English", "ur": "اردو", "es": "Español", "fr": "Français", "de": "Deutsch",
+    "ar": "العربية", "hi": "हिन्दी", "zh-CN": "简体中文",
+}
+
+# Core navigation and safety UI. Detailed technical findings remain data-driven English in 3.0;
+# contributors can extend any language without changing scanner logic.
+TEXT = {
+    "en": {
+        "tagline": "Safe Windows storage analysis and cleanup",
+        "drive_used": "Drive used", "drive_free": "Drive free", "scanned": "Scanned", "reclaimable": "Potentially reclaimable",
+        "scan_location": "Scan location", "browse": "Browse", "analyze": "Analyze", "fast_scan": "Fast scan", "stop": "Stop",
+        "search": "Search all loaded features", "clear": "Clear", "ready": "Ready. Choose a folder or drive to analyze.",
+        "largest": "Largest items", "treemap": "Treemap", "changes": "Changes", "projects": "Projects", "duplicates": "Duplicates",
+        "junk": "Junk & caches", "apps": "Installed apps", "system": "System & startup", "memory": "Memory Center", "monitor": "Install monitor",
+        "tools": "Windows tools", "settings": "Settings", "export": "Export report", "diagnostics": "Test diagnostics",
+        "privacy": "Offline by default • no telemetry • review before cleanup", "restart_language": "Restart SpaceMedic to apply the new language.",
+    },
+    "ur": {
+        "tagline": "ونڈوز اسٹوریج کا محفوظ تجزیہ اور صفائی", "drive_used": "استعمال شدہ", "drive_free": "خالی جگہ", "scanned": "اسکین شدہ", "reclaimable": "ممکنہ قابلِ بازیافت",
+        "scan_location": "اسکین مقام", "browse": "منتخب کریں", "analyze": "تجزیہ", "fast_scan": "تیز اسکین", "stop": "روکیں", "search": "تمام خصوصیات میں تلاش", "clear": "صاف کریں", "ready": "تجزیے کے لیے فولڈر یا ڈرائیو منتخب کریں۔",
+        "largest": "بڑی اشیاء", "treemap": "ٹری میپ", "changes": "تبدیلیاں", "projects": "پروجیکٹس", "duplicates": "نقل فائلیں", "junk": "فالتو اور کیش", "apps": "انسٹال ایپس", "system": "سسٹم اور اسٹارٹ اپ", "monitor": "انسٹال مانیٹر", "tools": "ونڈوز ٹولز", "settings": "ترتیبات", "export": "رپورٹ محفوظ کریں", "diagnostics": "تشخیصی رپورٹ", "privacy": "آف لائن • کوئی ٹیلی میٹری نہیں • صفائی سے پہلے جائزہ", "restart_language": "نئی زبان کے لیے SpaceMedic دوبارہ شروع کریں۔",
+    },
+    "es": {"tagline":"Análisis y limpieza segura del almacenamiento de Windows","drive_used":"Unidad usada","drive_free":"Espacio libre","scanned":"Analizado","reclaimable":"Potencialmente recuperable","scan_location":"Ubicación","browse":"Examinar","analyze":"Analizar","fast_scan":"Análisis rápido","stop":"Detener","search":"Buscar en todas las funciones","clear":"Limpiar","ready":"Elija una carpeta o unidad.","largest":"Elementos grandes","treemap":"Mapa de árbol","changes":"Cambios","projects":"Proyectos","duplicates":"Duplicados","junk":"Basura y cachés","apps":"Aplicaciones","system":"Sistema e inicio","monitor":"Monitor de instalación","tools":"Herramientas de Windows","settings":"Configuración","export":"Exportar informe","diagnostics":"Diagnóstico","privacy":"Sin conexión • sin telemetría • revise antes de limpiar","restart_language":"Reinicie SpaceMedic para aplicar el idioma."},
+    "fr": {"tagline":"Analyse et nettoyage sécurisés du stockage Windows","drive_used":"Espace utilisé","drive_free":"Espace libre","scanned":"Analysé","reclaimable":"Potentiellement récupérable","scan_location":"Emplacement","browse":"Parcourir","analyze":"Analyser","fast_scan":"Analyse rapide","stop":"Arrêter","search":"Rechercher dans toutes les fonctions","clear":"Effacer","ready":"Choisissez un dossier ou lecteur.","largest":"Éléments volumineux","treemap":"Carte arborescente","changes":"Modifications","projects":"Projets","duplicates":"Doublons","junk":"Fichiers inutiles et caches","apps":"Applications installées","system":"Système et démarrage","monitor":"Moniteur d’installation","tools":"Outils Windows","settings":"Paramètres","export":"Exporter le rapport","diagnostics":"Diagnostic","privacy":"Hors ligne • aucune télémétrie • vérifiez avant nettoyage","restart_language":"Redémarrez SpaceMedic pour appliquer la langue."},
+    "de": {"tagline":"Sichere Windows-Speicheranalyse und Bereinigung","drive_used":"Belegt","drive_free":"Frei","scanned":"Gescannt","reclaimable":"Potenziell freigebbar","scan_location":"Scanpfad","browse":"Durchsuchen","analyze":"Analysieren","fast_scan":"Schnellscan","stop":"Stopp","search":"Alle Funktionen durchsuchen","clear":"Leeren","ready":"Ordner oder Laufwerk auswählen.","largest":"Größte Elemente","treemap":"Treemap","changes":"Änderungen","projects":"Projekte","duplicates":"Duplikate","junk":"Datenmüll & Caches","apps":"Installierte Apps","system":"System & Autostart","monitor":"Installationsmonitor","tools":"Windows-Werkzeuge","settings":"Einstellungen","export":"Bericht exportieren","diagnostics":"Diagnose","privacy":"Offline • keine Telemetrie • vor Bereinigung prüfen","restart_language":"SpaceMedic neu starten, um die Sprache anzuwenden."},
+    "ar": {"tagline":"تحليل وتنظيف آمن لتخزين ويندوز","drive_used":"المستخدم","drive_free":"المساحة الحرة","scanned":"تم الفحص","reclaimable":"قابل للاستعادة المحتملة","scan_location":"موقع الفحص","browse":"استعراض","analyze":"تحليل","fast_scan":"فحص سريع","stop":"إيقاف","search":"البحث في جميع الميزات","clear":"مسح","ready":"اختر مجلدًا أو محركًا.","largest":"أكبر العناصر","treemap":"خريطة شجرية","changes":"التغييرات","projects":"المشاريع","duplicates":"الملفات المكررة","junk":"المهملات وذاكرة التخزين","apps":"التطبيقات المثبتة","system":"النظام وبدء التشغيل","monitor":"مراقب التثبيت","tools":"أدوات ويندوز","settings":"الإعدادات","export":"تصدير التقرير","diagnostics":"التشخيص","privacy":"دون اتصال • لا قياس عن بعد • راجع قبل التنظيف","restart_language":"أعد تشغيل SpaceMedic لتطبيق اللغة."},
+    "hi": {"tagline":"सुरक्षित Windows स्टोरेज विश्लेषण और सफाई","drive_used":"उपयोग","drive_free":"खाली स्थान","scanned":"स्कैन किया","reclaimable":"संभावित पुनर्प्राप्ति","scan_location":"स्कैन स्थान","browse":"ब्राउज़","analyze":"विश्लेषण","fast_scan":"तेज़ स्कैन","stop":"रोकें","search":"सभी सुविधाओं में खोजें","clear":"साफ करें","ready":"फ़ोल्डर या ड्राइव चुनें।","largest":"सबसे बड़े आइटम","treemap":"ट्रीमैप","changes":"परिवर्तन","projects":"प्रोजेक्ट","duplicates":"डुप्लिकेट","junk":"जंक और कैश","apps":"इंस्टॉल ऐप्स","system":"सिस्टम और स्टार्टअप","monitor":"इंस्टॉल मॉनिटर","tools":"Windows टूल्स","settings":"सेटिंग्स","export":"रिपोर्ट निर्यात","diagnostics":"डायग्नोस्टिक्स","privacy":"ऑफ़लाइन • कोई टेलीमेट्री नहीं • सफाई से पहले समीक्षा","restart_language":"भाषा लागू करने के लिए SpaceMedic पुनः आरंभ करें।"},
+    "zh-CN": {"tagline":"安全的 Windows 存储分析与清理","drive_used":"已用空间","drive_free":"可用空间","scanned":"已扫描","reclaimable":"可能可回收","scan_location":"扫描位置","browse":"浏览","analyze":"分析","fast_scan":"快速扫描","stop":"停止","search":"搜索所有已加载功能","clear":"清除","ready":"请选择文件夹或驱动器。","largest":"最大项目","treemap":"矩形树图","changes":"变化","projects":"项目","duplicates":"重复文件","junk":"垃圾与缓存","apps":"已安装应用","system":"系统与启动项","monitor":"安装监控","tools":"Windows 工具","settings":"设置","export":"导出报告","diagnostics":"诊断","privacy":"默认离线 • 无遥测 • 清理前请审核","restart_language":"请重启 SpaceMedic 以应用新语言。"},
+}
+
+
+def tr(language: str, key: str) -> str:
+    return TEXT.get(language, TEXT["en"]).get(key, TEXT["en"].get(key, key))

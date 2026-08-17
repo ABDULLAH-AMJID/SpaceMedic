@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=70"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "spacemedic"
+version = "3.6.0"
+description = "Safe Windows storage and developer-project analyzer"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "M.Abdullah Amjid"}]
+keywords = ["windows", "disk", "storage", "cleanup", "developer"]
+classifiers = ["Operating System :: Microsoft :: Windows", "Programming Language :: Python :: 3"]
+
+[project.scripts]
+spacemedic = "spacemedic.cli:main"
+
+[project.gui-scripts]
+spacemedic-gui = "spacemedic.gui:main"
+
+[tool.setuptools.packages.find]
+include = ["spacemedic*"]
+
+[tool.setuptools.package-data]
+spacemedic = ["cleanup_rules.json"]
